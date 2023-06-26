@@ -1,6 +1,5 @@
 package com.shoppingList.entities;
 
-import com.shoppingList.entities.Item;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinTable;
