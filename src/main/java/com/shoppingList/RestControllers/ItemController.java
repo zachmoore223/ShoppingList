@@ -25,7 +25,7 @@ public class ItemController {
     public Item getItem(@PathVariable long item_id) throws Exception {
         return itemRepository.findById(item_id).orElseThrow(() -> new Exception("Plant id not found: " + item_id));
     }
-    
+
     @PostMapping("/items")
     public Item addItem(@RequestBody Item item) {
     return itemRepository.save(item);
