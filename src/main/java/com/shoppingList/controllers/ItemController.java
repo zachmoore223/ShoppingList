@@ -1,7 +1,8 @@
-package com.shoppingList.RestControllers;
+package com.shoppingList.controllers;
 
 import com.shoppingList.entities.Item;
 import com.shoppingList.repositories.ItemRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -11,7 +12,7 @@ public class ItemController {
 
     final ItemRepository itemRepository;
 
-    public ItemController(ItemRepository itemRepository) {
+    public ItemController(@Autowired ItemRepository itemRepository) {
         this.itemRepository = itemRepository;
     }
 

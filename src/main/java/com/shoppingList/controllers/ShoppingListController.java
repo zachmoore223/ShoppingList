@@ -1,4 +1,4 @@
-package com.shoppingList.RestControllers;
+package com.shoppingList.controllers;
 
 import com.shoppingList.entities.Item;
 import com.shoppingList.entities.ShoppingList;
